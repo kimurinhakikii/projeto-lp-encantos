@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font: inherit;
+}
+
+:root {
+  --color-pink-light: #c59dd2;
+  --color-pink-base: #9547a5;
+  --color-pink-dark: #7d298a;
+  --color-pink-low: #3f0f41;
+
+  --color-blue-light: #73b6d2;
+  --color-blue-base: #358bb9;
+  --color-blue-mid: #2374a4;
+  --color-blue-dark: #144a72;
+  --color-blue-low: #08233c;
+
+  --color-shape-stroke: #002347;
+  --color-shape-hover: #001933;
+  --color-shape-base: #000f1f;
+  --color-shape-background: #00050a;
+
+  --color-text-title: #f8fbfb;
+  --color-text-body: #e2e7e9;
+  --color-text-label: #bac6c9;
+
+  --font-family: "Raleway", sans-serif;
+
+  --font-title-lg: 700 3rem / normal var(--font-family);
+  --font-title-md: 700 2.5rem / normal var(--font-family);
+  --font-title-sm: 700 2rem / normal var(--font-family);
+  --font-title-xs: 700 1rem / normal var(--font-family);
+
+  --font-subtitle: 500 2rem / 200% var(--font-family);
+
+  --font-body-lg: 400 1.25rem / 140% var(--font-family);
+  --font-body-md: 400 1rem / 140% var(--font-family);
+  --font-body-sm: 400 0.875rem / 140% var(--font-family);
+  --font-body-xs: 400 0.75rem / 140% var(--font-family);
+
+  --font-button: 700 0.875rem / 0 var(--font-family);
+  --font-link: 500 0.875rem / normal var(--font-family);
+  --font-tag: 700 0.625rem / normal var(--font-family);
+}
+
+body {
+  background-color: var(--color-shape-background);
+  color: var(--color-text-body);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90rem;
+  margin: auto;
+}
