@@ -20,11 +20,6 @@ Criar uma página estática, visualmente agradável, que utiliza animações par
 > **Preview do Projeto**  
 Acesse o site aqui: [Encantos - Landing Page](https://kimurinhakikii.github.io/projeto-lp-encantos/)  
 
-### 💻 Screenshot  
-
-![Captura de tela da landing page Encantos](![Hero](https://github.com/user-attachments/assets/f8a557a8-3ebe-4b3b-a409-bfdcf6ae3b0e)
-)  
-
 ## 🚀 Como Executar o Projeto Localmente  
 
 1. Clone o repositório:  
