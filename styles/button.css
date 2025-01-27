@@ -1,0 +1,44 @@
+a.button {
+  background-color: var(--color-pink-dark);
+  font: var(--font-button);
+  color: var(--color-text-title);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  position: relative;
+  & span {
+    z-index: 1;
+  }
+
+  &:hover::after {
+    scale: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 110%;
+    height: 230%;
+
+    border-radius: 50%;
+    background: var(--color-pink-base);
+
+    scale: 0;
+    transition: scale 500ms;
+  }
+
+  &.blue {
+    background-color: var(--color-blue-dark) !important;
+    &::after {
+      background: var(--color-blue-base);
+    }
+  }
+}
