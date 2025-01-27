@@ -1,0 +1,91 @@
+#hero-blur {
+  top: 0;
+  left: 0;
+  height: 72.4375rem;
+  width: 120.0625rem;
+  position: absolute;
+  z-index: -1;
+
+  & > img {
+    object-fit: cover;
+    height: 72.4375rem;
+    width: 90rem;
+  }
+}
+
+section#hero {
+  height: 59.25rem;
+  position: relative;
+  padding-inline: 1.25rem;
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: auto;
+    padding-top: 3.5rem;
+    & div.button-wrapper {
+      width: 4.875rem;
+      margin-block: 0.5625rem;
+    }
+    & > a > img {
+      &.only-desktop {
+        max-width: 14.375rem;
+      }
+    }
+  }
+  & h1 {
+    padding-top: 10.25rem;
+    max-width: 41rem;
+    margin: auto;
+    text-align: center;
+    font: var(--font-title-lg);
+    color: var(--color-text-title);
+
+    opacity: 0;
+    animation: appear 2s 500ms forwards;
+  }
+  & p {
+    max-width: 34.875rem;
+    margin: auto;
+    padding-top: 2rem;
+    font: var(--font-body-lg);
+    text-align: center;
+
+    opacity: 0;
+    animation: appear 2s 1s forwards;
+  }
+
+  #hero-background {
+    background: url(../assets/hero-background-gradient.svg) top center/cover
+      no-repeat;
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    animation: appear 1s forwards;
+
+    z-index: -1;
+
+    &::after {
+      content: "";
+
+      background: url(../assets/hero-background.svg) top center/cover no-repeat;
+
+      position: absolute;
+      inset: 0;
+
+      height: 100%;
+
+      opacity: 0;
+      animation: appear 2s 500ms forwards;
+    }
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
